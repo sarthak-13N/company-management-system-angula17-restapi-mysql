@@ -1,0 +1,64 @@
+<br>
+<br>
+<!-- 
+<h2>project list</h2>
+<ul *ngFor = "let project of projects">
+    <li>{{project.project_id}}</li>
+    <li>{{project.project_name}}</li>
+    <li>{{project.project_start_date}}</li>
+    <li>{{project.project_end_date}}</li>
+    </ul><br><br> -->
+<!-- <h1>Employee List</h1> -->
+
+<div class="container">
+
+    <div >
+        <form (ngSubmit)="goToProject()" >
+            <div class="form-group col-md-6 inline ">
+                
+                <input  [(ngModel)]="EnteredID" type="text" class="form-control" id="id" name="id" placeholder="Search by ID">
+                <button class="btn btn-secondary " type="submit">Search</button>
+                <button style="background-color: blue;" routerLink="/add-project" class="btn btn-secondary " type="submit">Get_New_Projects</button>
+                <button style="background-color: #f5ebef; border:0px; color:#f5ebef" routerLink="/login" class="btn btn-secondary " type="submit">login</button>
+                
+            </div>
+        </form>
+
+    </div>
+    <br>
+    <br>
+<div>
+<table style="margin-bottom: 50px;" class=" table table-responsive table-striped  border-dark">
+
+    <thead class="table-dark ">
+        <tr>
+            <th>Project id</th>
+            <th>Project Name</th>
+            <th>Project Start Date</th>
+            <th>Project Start Date</th>
+            <th>Actions</th>
+        </tr>
+
+    </thead> 
+
+
+    <tbody>
+        <tr *ngFor = "let project of projects">
+            <td>{{project.project_id}}</td>
+            <td>{{project.project_name}}</td>
+            <td>{{project.project_start_date}}</td>
+            <td>{{project.project_end_date}}</td>
+            <td>
+                <button (click) = "updateProject(project.project_id)" class = "btn  btn-secondary btn-sm"> Update</button>
+                <button (click) = "deleteProject(project.project_id)" class = "btn btn-danger btn-sm" style="margin-left: 10px"> Delete</button>
+                <button (click) = "detailsOfProject(project.project_id)" class = "btn btn-success btn-sm " style="margin-left: 10px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+
+
+</table>
+<br><br><br><br>
+</div>
+
+<router-outlet></router-outlet>

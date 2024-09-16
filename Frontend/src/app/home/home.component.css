@@ -1,0 +1,440 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+}
+
+
+/* body{
+    background-color: black;
+} */
+#p1 {
+  font-size: 3.1rem;
+}
+
+#p2 {
+  font-size: 2.5rem;
+}
+
+/* div {
+    display: block;
+}  */
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.carousel-caption {
+  font-size: 2.9rem;
+  height: 29rem;
+}
+
+/* ul {
+   
+    margin: 2rem 0; 
+    padding: 0; 
+  }
+
+  li {
+    list-style-type: style circle;
+    font-size: 1.2rem; 
+    margin-bottom: 0.5rem; Margin using rem units for spacing
+  } */
+
+/* .s1{
+
+    background-image: linear-gradient(to right,white,black);
+} */
+
+
+.divMain {
+  display: flex;
+  width: 100%;
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+
+
+
+
+
+section {
+  position: relative;
+  width: 100%;
+
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+.section-2 {
+  background-color: #333;
+  height: -20rem;
+  width: 100%;
+
+}
+
+.section-2 .fit-image {
+
+  height: 40rem;
+  width: 100%;
+
+}
+
+
+
+.text {
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+}
+
+.text #t1 {
+
+  margin-left: 7rem;
+  font-size: 1.5rem;
+
+}
+
+
+ul {
+  list-style-type: none;
+  /* Remove default list style */
+  margin: 1rem 3rem;
+  /* Add some margin using rem units for spacing */
+  padding: 0;
+  /* Remove default padding */
+}
+
+li {
+  font-size: 1.5rem;
+  /* Font size using rem units */
+  margin-bottom: 0.2rem;
+  /* Margin using rem units for spacing */
+}
+
+ul.category {
+  margin-left: 0;
+  /* Reset margin for the category list */
+}
+
+ul.category li {
+  font-weight: bold;
+  /* Make category items bold */
+  font-size: 1.5rem;
+  /* Font size for category items */
+  margin-bottom: 0.2rem;
+  /* Adjust margin for category items */
+}
+
+ul.subcategory {
+  list-style-type: disc;
+  /* Use 'disc' for filled circles for subcategories */
+  margin-left: 2rem;
+  /* Indent subcategories */
+}
+
+ul.subcategory li {
+  font-weight: normal;
+  /* Reset font weight for subcategory items */
+  font-size: 1.3rem;
+  /* Font size for subcategory items */
+}
+
+
+
+.about {
+  background-color: white;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: content-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.about {
+  background-color: #202020;
+  padding: 40px 0;
+  color: #fff;
+  /* Reduced padding */
+}
+
+.container {
+  max-width: 1100px;
+  /* Slightly narrower container */
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  font-size: 32px;
+  /* Slightly smaller heading */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column {
+  flex: 1;
+  max-width: 28%;
+  /* Reduced width */
+  margin: 10px;
+  /* Reduced margin */
+}
+
+.card {
+  background-color: #333;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  /* Reduced box-shadow */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px 15px;
+  /* Added padding inside the card */
+  height: 420px;
+  /* Set a fixed height */
+}
+
+.card img {
+  width: 100%;
+  height: 260px;
+  /* Set a fixed height for the image */
+  object-fit: cover;
+  /* Ensures the image is cropped proportionally */
+  border-bottom: 2px solid #092cd8;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  /* Reduced hover lift */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.container h2 {
+  font-size: 20px;
+  /* Reduced font size */
+  color: #fef8f8;
+  margin: 10px 0;
+}
+
+.title {
+  color: #fcf9f9;
+  font-size: 14px;
+  /* Slightly smaller title */
+  margin: 5px 0;
+}
+
+.container p {
+  font-size: 13px;
+  /* Smaller paragraph text */
+  color: #fbf6f6;
+  margin: 5px 0;
+  /* Reduced paragraph margin */
+
+}
+
+.button {
+  border: none;
+  outline: 0;
+  padding: 6px 12px;
+  /* Reduced button padding */
+  color: white;
+  background-color: #092cd8;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 14px;
+  /* Reduced button font size */
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0551a3;
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    max-width: 45%;
+    /* Two cards per row on medium screens */
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    max-width: 100%;
+    /* Full width on small screens */
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+/* About Section */
+.about-section {
+  padding: 100px 0;
+  background-color: #202020;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  color: #ff4081;
+  margin-bottom: 30px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.about-content img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.mission-section {
+  padding: 80px 0;
+  background-color: #333;
+  text-align: center;
+}
+
+.mission-section h2 {
+  font-size: 2.5rem;
+  color: #ff4081;
+  margin-bottom: 20px;
+}
+
+.mission-section p {
+  font-size: 1.1rem;
+  color: #ccc;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+/* Features Section */
+#features {
+  padding: 80px 20px;
+  background: #333;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-item {
+  text-align: center;
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.feature-item h3 {
+  color: #00bcd4;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.feature-item p {
+  color: #ddd;
+}
+
+/* CTA Section */
+#cta {
+  padding: 80px 20px;
+  background: #1f1f1f;
+  color: #fff;
+  text-align: center;
+}
+
+#cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#cta p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+#cta .cta-button {
+  background: #1f1f1f;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#cta .cta-button:hover {
+  background: #6e6b6b;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.cta-button {
+  padding: 10px 30px;
+  background: ;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background: #3a3b3b;
+  border: 2px solid #fff;
+}

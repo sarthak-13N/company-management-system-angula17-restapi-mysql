@@ -1,0 +1,53 @@
+<style>
+   
+</style>
+<div class="container-sm">
+    <br><br><br>
+    <div class="form-container container-sm">
+        <form #f="ngForm" (ngSubmit)="f.form.valid && onSubmit()" class="row g-3 container-sm">
+            <!-- <h2>Add New Project</h2> -->
+            <div class="form-group">
+                <label><b>Project Name</b></label>
+                <input type="text" class="form-control" id="fname" [(ngModel)]="project.project_name" name="fname"
+                    required minlength="3" #fname="ngModel" [ngClass]="{ 'is-invalid': f.submitted && fname.errors }" />
+
+                <div *ngIf="f.submitted && fname.errors" class="invalid-feedback">
+                    <div *ngIf="fname.errors['required']">Project name is required</div>
+                    <div *ngIf="fname.errors['minlength']">Project Name minimum 3 characters are required!!!</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label><b>Project Start Date</b></label>
+                <input type="date" class="form-control" id="joiningDate" [(ngModel)]="project.project_start_date"
+                    name="joiningDate" required #joiningDate="ngModel"
+                    [ngClass]="{ 'is-invalid': f.submitted && joiningDate.errors }">
+
+                <div *ngIf="f.submitted && joiningDate.errors" class="invalid-feedback">
+                    <div *ngIf="joiningDate.errors['required']">Project Start Date is required</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label><b>Project End Date</b></label>
+                <input type="date" class="form-control" id="endingDate" [(ngModel)]="project.project_end_date"
+                    name="endingDate" required #endingDate="ngModel"
+                    [ngClass]="{ 'is-invalid': f.submitted && endingDate.errors }">
+
+                <div *ngIf="f.submitted && endingDate.errors" class="invalid-feedback">
+                    <div *ngIf="endingDate.errors['required']">Project End Date is required</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-success full-width-button" type="submit" id="reg">Submit</button>
+            </div>
+
+            <div class="form-group">
+                <button type="button" (click)="goToProject()" class="btn btn-danger full-width-button">Cancel</button>
+            </div>
+
+        </form>
+    </div>
+    <br><br><br>
+</div>

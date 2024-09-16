@@ -1,0 +1,52 @@
+
+<br>
+
+<div class="container">
+
+<h3>Project Details</h3>
+<br>
+<div class="box">
+    
+    <div>
+
+      <img src="../assets/pp.jpg">
+    </div>
+<div >
+    <table  class=" table table-striped  border-dark  ">
+        <thead class=" table-dark">        
+        <tr>
+          <th  >Attribute</th>
+          <th  >Value</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+    <tr>
+          <td><b>Project Id</b></td>
+          <td>{{project.project_id}}</td>
+        </tr>
+        <tr>
+          <td><b>Project Name</b></td>
+          <td>{{project.project_name}}</td>
+        </tr>
+        <tr>
+          <td><b>Project Start Date </b></td>
+          <td>{{project.project_start_date}}</td>
+        </tr>
+        <tr>
+          <td><b>Project End Date</b></td>
+          <td>{{project.project_end_date}}</td>
+        </tr>
+       
+
+    </tbody>    
+      </table>
+
+      <a routerLink="/updating-id/{{project.project_id}}" id="btn1"class="btn btn-secondary">Update Details</a>
+      <a routerLink="/projects" id="btn2" class="btn btn-danger">Back</a>
+</div>
+    
+</div>
+
+</div>
